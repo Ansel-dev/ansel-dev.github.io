@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth select-none cursor-pointer">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansel Christian Lumbao</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+
+<body class="h-dvh">
+    <style>
+        html {
+            --scroll-behavior: smooth !important;
+            scroll-behavior: smooth !important;
+        }
+    </style>
+    <main
+        class="relative snap-y min-h-screen bg-white-900 dark:bg-slate-900 grid grid-cols-1 place-content-end scroll-smooth snap-y scroll-ml-40">
+        <nav class="sticky top-0 justify-center z-50">
+            <div class="w-full fixed top-0 px-1 bg-white dark:bg-slate-900 border-0 border-b">
+                <ul class=" flex lg:flex justify-center items-center gap-3 md:gap-8 hover:text-white p-2">
+                    <li class=" rounded-lg  focus:text-white  ">
+                        <a href="#about_me"
+                            class=" text-black dark:text-white font-bold text-xs rounded-lg hover:text-amber-200">
+                            <svg class=" scale-100 w-5 h-5 md:w-8 md:h-8 mx-auto hover:text-yellow-400 "
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            </svg>
+                            About
+                        </a>
+                    </li>
+                    <li class="rounded-lg hover:text-white focus:text-white ">
+                        <a href="#" class=" scale-100 hover:text-amber-200 text-black dark:text-white font-bold text-xs">
+                            <svg class="w-5 h-5 md:w-8 md:h-8 mx-auto hover:text-yellow-400"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" />
+                            </svg>
+                            Resume
+                        </a>
+                    </li>
+                    <li class=" rounded-lg hover:text-white focus:text-white ">
+                        <a href="#" class="scale-100 cursor-not-allowed hover:text-amber-200 text-black dark:text-white font-bold text-xs">
+                            <svg class="w-5 h-5 md:w-8 md:h-8 mx-auto hover:text-yellow-400"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                            </svg>
+                            Project
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="name"
+            class="scroll-ml-40 text-center min-h-screen flex flex-col items-center justify-center min-w-screen">
+            <div class="px-4 lg:p-5 min-w-15 md:min-w-20 min-w-screen">
+                <h1 class=" text-3xl text-black dark:text-white text-center md:text-start font-light">Hi there, I'm
+                    <!-- <span class=" text-yellow-400 dark:text-yellow-100">&#60;<span
+                            class="hover:brightness-125 font-bold ">/</span>&#62;</span>, -->
+                </h1>
+                <h2
+                    class=" text-center md:text-start text-slate-900 text-6xl md:text-5xl line-clamp-none leading-2 md:leading-relaxed line-clamp-1 font-extrabold dark:text-white py-2">
+                    Ansel
+                    Christian Lumbao
+                </h2>
+                <p class="ml11 text-lg md:text-2xl font-light text-black dark:text-white ">
+                    <span class="text-wrapper">
+                        <span class="line line1"></span>
+                        <span class="letters">Aspiring Software Developer 
+                            <span class="opacity-100">|</span> 
+                            IT
+                        </span>
+                    </span>
+
+                </p>
+            </div>
+        </section>
+        <section id="about_me"
+            class="min-h-screen scroll-mt-10 p-3 flex flex-col md:flex-row-reverse text-center text-white gap-2 md:gap-12 justify-center items-center">
+            <div class="md:w-80 flex justify-around content-end">
+                <img class="rounded-full object-contain w-52 md:w-80 p-1  mt-4 grayscale hover:grayscale-0 " src="img/me.png" alt="">
+            </div>
+            <div class="w-full md:w-1/2 h-auto px-2 text-start py-4">
+                <div class="line-clamp-none  text-pretty  ">
+                    <h1 class="p-0 pb-2 text-black dark:text-white text-center md:text-start text-3xl md:text-lg font-extrabold ">
+                        <a href="#name" class="hover:text-yellow-400">About me</a>
+                    </h1>
+                    <p class="text-black dark:text-white text-start opacity-75 ">I am a responsible and hardworking
+                        person with
+                        great
+                        communication and
+                        interpersonal skills. I am familiar
+                        with computer hardware and software application. Eager to learn and grow in a
+                        fast-paced development environment.
+                    </p>
+                    <p class="text-black dark:text-white text-start opacity-75 mt-4">
+                        I am passionate about developing systems, Building Web Application. I am constantly seeking to
+                        learn and master the
+                        latest web technologies and frameworks.
+                    </p>
+                </div>
+                <!-- <div class="mt-2 text-sm text-black dark:text-white">
+                    <h1 class="font-bold text-lg"><span class="hover:text-yellow-400">Education</span></h1>
+                    <p class="text-black dark:text-yellow-400">Secondary</p>
+                    <p class="font-bold text-xs mb-2">Pablo Lorenzo National High School</p>
+                    <p class="text-black dark:text-yellow-400">College</p>
+                    <p class="text-xs font-bold">Interface Computer College</p>
+                    <p class="text-xs">&bull; BS Information Technology</p>
+                </div> -->
+                <!-- <p class="text-start py-2"><span class="text-yellow-400">Education: </span>BS Information Technology</p> -->
+            </div>
+        </section>
+        <section
+            class="scroll-ml-40 p-3 flex flex-wrap justify-around text-center text-black dark:text-white font-bold gap-5 ">
+            <div class="w-full">
+                <h1 class="text-3xl md:text-lg font-bold hover:text-yellow-400">TECHNOLOGY STACK</h1>
+            </div>
+            <div class="border w-full  md:w-8/12 p-2 drop-shadow-sm">
+                <ul class="flex flex-wrap justify-around md:justify-center">
+                    <li class="p-3 hover:-translate-y-1 z-0">
+                        <img class="w-24 md:w-28 p-2" src="img/html-5.png" alt="">
+                        <p class="hover:text-yellow-400">HTML</p>
+                    </li>
+                    <li class="p-3 hover:-translate-y-1">
+                        <img class="w-24 md:w-28 p-2" src="img/css-3.png" alt="">
+                        <p class="hover:text-yellow-400">CSS</p>
+                    </li>
+                    <li class="p-3 hover:-translate-y-1 ">
+                        <img class="w-24 md:w-28 p-2" src="img/bootstrap_v5.png" alt="">
+                        <p class="hover:text-yellow-400">Bootstrap</p>
+                    </li>
+                    <li class="p-3 hover:-translate-y-1">
+                        <img class="w-24 md:w-28 p-2" src="img/tailwind.png" alt="">
+                        <p class="hover:text-yellow-400">Tailwind</p>
+                    </li>
+                    <li class="p-3 hover:-translate-y-1">
+                        <img class="w-24 md:w-28 p-2" src="img/php.png" alt="">
+                        <p class="hover:text-yellow-400">PHP</p>
+                    </li>
+                    <li class="p-3 hover:-translate-y-1">
+                        <img class="w-24 md:w-28 p-2" src="img/laravel.png" alt="">
+                        <p class="hover:text-yellow-400">Laravel</p>
+                    </li>
+                    <li class="p-3 hover:-translate-y-1">
+                        <img class="w-24 p-2" src="img/codeigniter.png" alt="">
+                        <p class="hover:text-yellow-400">Codeigniter</p>
+                    </li>
+                    <li class="p-3 hover:-translate-y-1">
+                        <img class="w-24 md:w-28 p-2" src="img/javascript.png" alt="">
+                        <p class="hover:text-yellow-400">Javascript</p>
+                    </li>
+                    <li class="p-3 hover:-translate-y-1">
+                        <img class="w-24 md:w-28 p-2" src="img/jquery.png" alt="">
+                        <p class="hover:text-yellow-400">Jquery</p>
+                    </li>
+                    <li class="p-3 hover:-translate-y-1">
+                        <img class="w-24 md:w-28 p-2" src="img/python.png" alt="">
+                        <p class="hover:text-yellow-400">Python</p>
+                    </li>
+                    <li class="p-3 hover:-translate-y-1">
+                        <img class="w-24 md:w-28 p-2" src="img/mysql.png" alt="">
+                        <p class="hover:text-yellow-400">SQL</p>
+                    </li>
+                    <li class="p-3 hover:-translate-y-1">
+                        <img class="w-24 md:w-28 p-2" src="img/git.png" alt="">
+                        <p class="hover:text-yellow-400">Git</p>
+                    </li>
+                    <li class="p-3 hover:-translate-y-1">
+                        <img class="w-24 md:w-28 p-2" src="img/microsoft.png" alt="">
+                        <p class="hover:text-yellow-400">Microsoft</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="p-2 text-center">
+            <a class="m-2 text-white dark:text-black rounded-full px-3 py-1 m-2 bg-black dark:bg-white opacity-75 hover:border-2 animate-pulse font-bold text-sm"
+                href="#name">Back to top</a>
+            <p class="mt-2 text-black dark:text-white">All Rights Reserved © 2022</p>
+        </section>
+    </main>
+    <script>
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml11 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: true })
+            .add({
+                targets: '.ml11 .line',
+                scaleY: [0, 1],
+                opacity: [0.5, 1],
+                easing: "easeOutExpo",
+                duration: 800
+            })
+            .add({
+                targets: '.ml11 .line',
+                translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+                easing: "easeOutExpo",
+                duration: 700,
+                delay: 100
+            }).add({
+                targets: '.ml11 .letter',
+                opacity: [0, 1],
+                easing: "easeOutExpo",
+                duration: 700,
+                offset: '-=775',
+                delay: (el, i) => 34 * (i + 1)
+            }).add({
+                targets: '.ml11',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 2000
+            });
+    </script>
+</body>
+
+</html>
