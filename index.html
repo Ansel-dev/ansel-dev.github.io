@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ansel Christian Lumbao</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </head>
 
@@ -18,53 +19,61 @@
     </style>
     <main
         class="relative snap-y min-h-screen bg-white-900 dark:bg-slate-900 grid grid-cols-1 place-content-end scroll-smooth snap-y scroll-ml-40">
-        <nav class="sticky top-0 justify-center z-50">
-            <div class="w-full fixed top-0 px-1 bg-white dark:bg-slate-900 border-0 border-b">
-                <ul class=" flex lg:flex justify-center items-center gap-3 md:gap-8 hover:text-white p-2">
-                    <li class=" rounded-lg  focus:text-white  ">
-                        <a href="#about_me"
-                            class=" text-black dark:text-white font-bold text-xs rounded-lg hover:text-amber-200">
-                            <svg class=" scale-100 w-5 h-5 md:w-8 md:h-8 mx-auto hover:text-yellow-400 "
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                            </svg>
-                            About
-                        </a>
-                    </li>
-                    <li class="rounded-lg hover:text-white focus:text-white ">
-                        <a href="#" class=" scale-100 hover:text-amber-200 text-black dark:text-white font-bold text-xs">
-                            <svg class="w-5 h-5 md:w-8 md:h-8 mx-auto hover:text-yellow-400"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" />
-                            </svg>
-                            Resume
-                        </a>
-                    </li>
-                    <li class=" rounded-lg hover:text-white focus:text-white ">
-                        <a href="#" class="scale-100 cursor-not-allowed hover:text-amber-200 text-black dark:text-white font-bold text-xs">
-                            <svg class="w-5 h-5 md:w-8 md:h-8 mx-auto hover:text-yellow-400"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
-                            </svg>
-                            Project
-                        </a>
-                    </li>
-                </ul>
+        <nav
+            class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between md:justify-around mx-auto p-4">
+                <a class="flex items-center space-x-3 rtl:space-x-reverse ">
+                    <img src="img/dev.png" class="h-8" alt="dev">
+                </a>
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse justify-between">
+                    <button type="button"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Resume</button>
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <ul
+                        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#name"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about_me"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                        </li>
+                        <li>
+                            <a href="#services"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                        </li>
+                        <li>
+                            <form action="mailto:anselchristianlumbao@example.com" method="post" enctype="text/plain">
+                                <button
+                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                                    Contact
+                                </button>
+                            </form>
+
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
+
 
         <section id="name"
             class="scroll-ml-40 text-center min-h-screen flex flex-col items-center justify-center min-w-screen">
             <div class="px-4 lg:p-5 min-w-15 md:min-w-20 min-w-screen">
                 <h1 class=" text-3xl text-black dark:text-white text-center md:text-start font-light">Hi there, I'm
-                    <!-- <span class=" text-yellow-400 dark:text-yellow-100">&#60;<span
-                            class="hover:brightness-125 font-bold ">/</span>&#62;</span>, -->
+
                 </h1>
                 <h2
                     class=" text-center md:text-start text-slate-900 text-6xl md:text-5xl line-clamp-none leading-2 md:leading-relaxed line-clamp-1 font-extrabold dark:text-white py-2">
@@ -74,8 +83,8 @@
                 <p class="ml11 text-lg md:text-2xl font-light text-black dark:text-white ">
                     <span class="text-wrapper">
                         <span class="line line1"></span>
-                        <span class="letters">Aspiring Software Developer 
-                            <span class="opacity-100">|</span> 
+                        <span class="letters">Aspiring Software Developer
+                            <span class="opacity-100 font-extrabold">|</span>
                             IT
                         </span>
                     </span>
@@ -84,102 +93,172 @@
             </div>
         </section>
         <section id="about_me"
-            class="min-h-screen scroll-mt-10 p-3 flex flex-col md:flex-row-reverse text-center text-white gap-2 md:gap-12 justify-center items-center">
-            <div class="md:w-80 flex justify-around content-end">
-                <img class="rounded-full object-contain w-52 md:w-80 p-1  mt-4 grayscale hover:grayscale-0 " src="img/me.png" alt="">
+            class="min-h-80 scroll-mt-20  flex flex-col md:flex-row-reverse text-center text-white gap-2 md:gap-12 justify-center items-center ">
+            <div class="w-full md:w-80 flex flex-col justify-center items-center self-center md:self-stretch  p-4 bg-slate-800 gap-2">
+                <img class="rounded-full object-contain w-52 md:w-80" src="img/me-v4.jpg" alt="">
+                <div class=" w-50 *:flex *:items-center  *:justify-start  *:text-xs *:mt-2 text-white ">
+                    <div>
+                        <svg class="w-6 h-6 text-gray-800 text-white mx-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0a8.949 8.949 0 0 0 4.951-1.488A3.987 3.987 0 0 0 13 16h-2a3.987 3.987 0 0 0-3.951 3.512A8.948 8.948 0 0 0 12 21Zm3-11a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                          </svg>
+                          
+                          <p >anselchristianlumbao@gmail.com</p>                          
+                    </div>
+                    <div>
+                        <svg class="w-6 h-6 text-gray-800 text-white mx-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd"/>
+                          </svg>
+                          <p>Davao City , Philippines</p>                          
+                    </div>
+
+                </div>
             </div>
             <div class="w-full md:w-1/2 h-auto px-2 text-start py-4">
                 <div class="line-clamp-none  text-pretty  ">
-                    <h1 class="p-0 pb-2 text-black dark:text-white text-center md:text-start text-3xl md:text-lg font-extrabold ">
-                        <a href="#name" class="hover:text-yellow-400">About me</a>
+                    <h1
+                        class="p-0 pb-2 text-black dark:text-white text-center md:text-start text-3xl md:text-lg font-extrabold ">
+                        <a href="#name" class="hover:text-yellow-400 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About me</a>
                     </h1>
-                    <p class="text-black dark:text-white text-start opacity-75 ">I am a responsible and hardworking
+                    <p class="text-black dark:text-white text-start opacity-75 text-lg leading-loose font-medium">
+                        I am a responsible and hardworking
                         person with
-                        great
+                        strong
                         communication and
-                        interpersonal skills. I am familiar
-                        with computer hardware and software application. Eager to learn and grow in a
-                        fast-paced development environment.
+                        interpersonal skills. My familiarity with computer hardware and software applications enables me
+                        to thrive. I'm Eager to learn and grow in a
+                        fast-paced development environment I am committed to staying updated with the latest web
+                        technologies and frameworks.
                     </p>
-                    <p class="text-black dark:text-white text-start opacity-75 mt-4">
-                        I am passionate about developing systems, Building Web Application. I am constantly seeking to
-                        learn and master the
-                        latest web technologies and frameworks.
-                    </p>
+
                 </div>
-                <!-- <div class="mt-2 text-sm text-black dark:text-white">
-                    <h1 class="font-bold text-lg"><span class="hover:text-yellow-400">Education</span></h1>
-                    <p class="text-black dark:text-yellow-400">Secondary</p>
-                    <p class="font-bold text-xs mb-2">Pablo Lorenzo National High School</p>
-                    <p class="text-black dark:text-yellow-400">College</p>
-                    <p class="text-xs font-bold">Interface Computer College</p>
-                    <p class="text-xs">&bull; BS Information Technology</p>
-                </div> -->
-                <!-- <p class="text-start py-2"><span class="text-yellow-400">Education: </span>BS Information Technology</p> -->
+                <div class="w-full drop-shadow-sm mt-4">
+                    
+                    <h1 class="text-3xl md:text-lg font-extrabold hover:text-yellow-400 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 ">Tools</h1>
+                    <ul class="flex flex-wrap justify-around md:justify-start">
+                        <li class="p-3 hover:-translate-y-1 z-0">
+                            <img class="w-10 md:w-10" src="img/html-5.png" alt="">
+                        
+                        </li>
+                        <li class="p-3 hover:-translate-y-1">
+                            <img class="w-10 md:w-10" src="img/css-3.png" alt="">
+                     
+                        </li>
+                        <li class="p-3 hover:-translate-y-1 ">
+                            <img class="w-10 md:w-10" src="img/bootstrap_v5.png" alt="">
+                     
+                        </li>
+                        <li class="p-3 hover:-translate-y-1">
+                            <img class="w-10 md:w-10" src="img/tailwind.png" alt="">
+                         
+                        </li>
+                        <li class="p-3 hover:-translate-y-1">
+                            <img class="w-10 md:w-10" src="img/php.png" alt="">
+                          
+                        </li>
+                        <li class="p-3 hover:-translate-y-1">
+                            <img class="w-10 md:w-10" src="img/laravel.png" alt="">
+                       
+                        </li>
+                        <li class="p-3 hover:-translate-y-1 text-center">
+                            <img class="w-10 md:w-10" src="img/codeigniter.png" alt="">
+                         
+                        </li>
+                        <li class="p-3 hover:-translate-y-1">
+                            <img class="w-10 md:w-10" src="img/javascript.png" alt="">
+                         
+                        </li>
+                        <li class="p-3 hover:-translate-y-1">
+                            <img class="w-10 md:w-10" src="img/jquery.png" alt="">
+                         
+                        </li>
+                        <li class="p-3 hover:-translate-y-1">
+                            <img class="w-10 md:w-10" src="img/python.png" alt="">
+                           
+                        </li>
+                        <li class="p-3 hover:-translate-y-1">
+                            <img class="w-10 md:w-10" src="img/mysql.png" alt="">
+                       
+                        </li>
+                        <li class="p-3 hover:-translate-y-1">
+                            <img class="w-10 md:w-10" src="img/git.png" alt="">
+                        
+                        </li>
+                        <li class="p-3 hover:-translate-y-1">
+                            <img class="w-10 md:w-10" src="img/microsoft.png" alt="">
+                            
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
-        <section
-            class="scroll-ml-40 p-3 flex flex-wrap justify-around text-center text-black dark:text-white font-bold gap-5 ">
-            <div class="w-full">
-                <h1 class="text-3xl md:text-lg font-bold hover:text-yellow-400">TECHNOLOGY STACK</h1>
+
+        <div id="services" class="scroll-mt-20 grid grid-cols-2 gap-4 p-4 text-white ">
+        <!-- <section
+            class="scroll-ml-40 p-3  flex flex-wrap justify-around text-center text-black dark:text-white font-bold gap-5 "> -->
+            <div class="col-span-2 text-start">
+                <h1 class="text-center text-3xl md:text-lg font-extrabold hover:text-yellow-400 mt-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">What I'm Doing Now?
+                </h1>
             </div>
-            <div class="border w-full  md:w-8/12 p-2 drop-shadow-sm">
-                <ul class="flex flex-wrap justify-around md:justify-center">
-                    <li class="p-3 hover:-translate-y-1 z-0">
-                        <img class="w-24 md:w-28 p-2" src="img/html-5.png" alt="">
-                        <p class="hover:text-yellow-400">HTML</p>
-                    </li>
-                    <li class="p-3 hover:-translate-y-1">
-                        <img class="w-24 md:w-28 p-2" src="img/css-3.png" alt="">
-                        <p class="hover:text-yellow-400">CSS</p>
-                    </li>
-                    <li class="p-3 hover:-translate-y-1 ">
-                        <img class="w-24 md:w-28 p-2" src="img/bootstrap_v5.png" alt="">
-                        <p class="hover:text-yellow-400">Bootstrap</p>
-                    </li>
-                    <li class="p-3 hover:-translate-y-1">
-                        <img class="w-24 md:w-28 p-2" src="img/tailwind.png" alt="">
-                        <p class="hover:text-yellow-400">Tailwind</p>
-                    </li>
-                    <li class="p-3 hover:-translate-y-1">
-                        <img class="w-24 md:w-28 p-2" src="img/php.png" alt="">
-                        <p class="hover:text-yellow-400">PHP</p>
-                    </li>
-                    <li class="p-3 hover:-translate-y-1">
-                        <img class="w-24 md:w-28 p-2" src="img/laravel.png" alt="">
-                        <p class="hover:text-yellow-400">Laravel</p>
-                    </li>
-                    <li class="p-3 hover:-translate-y-1">
-                        <img class="w-24 p-2" src="img/codeigniter.png" alt="">
-                        <p class="hover:text-yellow-400">Codeigniter</p>
-                    </li>
-                    <li class="p-3 hover:-translate-y-1">
-                        <img class="w-24 md:w-28 p-2" src="img/javascript.png" alt="">
-                        <p class="hover:text-yellow-400">Javascript</p>
-                    </li>
-                    <li class="p-3 hover:-translate-y-1">
-                        <img class="w-24 md:w-28 p-2" src="img/jquery.png" alt="">
-                        <p class="hover:text-yellow-400">Jquery</p>
-                    </li>
-                    <li class="p-3 hover:-translate-y-1">
-                        <img class="w-24 md:w-28 p-2" src="img/python.png" alt="">
-                        <p class="hover:text-yellow-400">Python</p>
-                    </li>
-                    <li class="p-3 hover:-translate-y-1">
-                        <img class="w-24 md:w-28 p-2" src="img/mysql.png" alt="">
-                        <p class="hover:text-yellow-400">SQL</p>
-                    </li>
-                    <li class="p-3 hover:-translate-y-1">
-                        <img class="w-24 md:w-28 p-2" src="img/git.png" alt="">
-                        <p class="hover:text-yellow-400">Git</p>
-                    </li>
-                    <li class="p-3 hover:-translate-y-1">
-                        <img class="w-24 md:w-28 p-2" src="img/microsoft.png" alt="">
-                        <p class="hover:text-yellow-400">Microsoft</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
+            <!-- <div class="w-full md:w-12/12 p-2 drop-shadow-sm text-start mb-4"> -->
+            <!-- <div class="w-100 grid grid-cols-2 gap-4 p-4"> -->
+                <div class="col-span-2 md:col-span-1 flex flex gap-4 p-4 border-0 border-slate-600 border-l-2 border-b-2 rounded-md bg-slate-800">
+                    <div class="text-center">
+                        <img class="w-16 md:w-28" src="img/web-icon.png" alt="" srcset="">
+                    </div>
+                    <div class="justify-around ml-2 pl-2">
+                        <h3 class="text-lg font-bold">Web Development</h3>
+                        <p>To deliver reliable PHP-based solutions that meet your requirements.</p>
+                        <div class="mt-2">
+                            Building Website | Responsive Design | Deploy and Manage Website | Revision
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-span-2 md:col-span-1  flex flex gap-4 p-4 border-0 border-slate-600 border-l-2 border-b-2 rounded-md bg-slate-800">
+                    <div class="text-center">
+                        <img class="w-16 md:w-40" src="img/support.png" alt="" srcset="">
+                    </div>
+                    <div class="justify-around ml-2 pl-2">
+                        <h3 class="text-lg font-bold">IT Specialist</h3>
+                        <p>Providing support in managing and troubleshooting and to ensure seamless operations and minimal downtime</p>
+                        <div class="mt-2">
+                            Technical Support and Maintenance | Hardware and software installation | Network administration
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-span-2 md:col-span-1  flex flex gap-4 p-4 border-0 border-slate-600 border-l-2 border-b-2 rounded-md bg-slate-800">
+                    <div class="text-center">
+                        <img class="w-16 md:w-20" src="img/database.png" alt="" srcset="">
+                    </div>
+                    <div class="justify-around ml-2 pl-2">
+                        <h3 class="text-lg font-bold">Database Design</h3>
+                        <p>Design and optimize databases to store, retrieve, and manage your data effectively. </p>
+                        <div class="mt-2">
+                            ERD Diagram | Optimize Query  | Migration
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-span-2 md:col-span-1  flex flex gap-4 p-4 border-0 border-slate-600 border-l-2 border-b-2 rounded-md bg-slate-800">
+                    <div class="text-center">
+                        <img class="w-16 md:w-20" src="img/elementor.png" alt="" srcset="">
+                    </div>
+                    <div class="justify-around ml-2 pl-2">
+                        <h3 class="text-lg font-bold">WordPress</h3>
+                        <p>Develop Wordpress Website Empowering online presence </p>
+                        <div class="mt-2">
+                            Wireframe to Static Website | Web Hosting  | Company Emails 
+                        </div>
+                    </div>
+
+                </div>
+
+            <!-- </div> -->
+            <!-- </div> -->
+        <!-- </section> -->
+        </div>
+
         <section class="p-2 text-center">
             <a class="m-2 text-white dark:text-black rounded-full px-3 py-1 m-2 bg-black dark:bg-white opacity-75 hover:border-2 animate-pulse font-bold text-sm"
                 href="#name">Back to top</a>
@@ -197,19 +276,19 @@
                 scaleY: [0, 1],
                 opacity: [0.5, 1],
                 easing: "easeOutExpo",
-                duration: 800
+                duration: 100
             })
             .add({
                 targets: '.ml11 .line',
                 translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
                 easing: "easeOutExpo",
-                duration: 700,
-                delay: 100
+                duration: 500,
+                delay: 50
             }).add({
                 targets: '.ml11 .letter',
                 opacity: [0, 1],
                 easing: "easeOutExpo",
-                duration: 700,
+                duration: 100,
                 offset: '-=775',
                 delay: (el, i) => 34 * (i + 1)
             }).add({
@@ -220,6 +299,7 @@
                 delay: 2000
             });
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 
 </html>
